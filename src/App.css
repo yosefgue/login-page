@@ -4,7 +4,7 @@
   padding: 0;
 }
 body {
-  background-image: url('/src/assets/6.jpg');
+  background-image: url('/src/assets/2.jpg');
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,7 @@ form {
 }
 
 form input {
-  border: 2px solid #f1f1f1;
+  border: none;
   height: 40px;
   border-radius: 10px;
   padding: 0 10px;
@@ -58,7 +58,7 @@ button {
 }
 
 button:hover {
-  opacity: 0.8;
+  opacity: 0.7;
   transition: all 0.3s ease;
 }
 
@@ -67,11 +67,7 @@ button:hover {
   color: white;
 }
 #google {
-  background-color: #f1f1f1;
-  border: 2px solid #f1f1f1;
-}
-#google:hover {
-  background-color: white;
+  background-color: #ffffff;
 }
 
 button img {
@@ -93,7 +89,9 @@ h1 {
   min-height: 400px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
 
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(5px);
+
 }
 
 .block {
