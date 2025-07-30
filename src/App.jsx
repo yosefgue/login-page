@@ -1,10 +1,12 @@
 import './App.css'
+import login from '/src/assets/log-in.png'
+import google from '/src/assets/icons8-google.svg'
 
 function App() {
   return (
     <>
       <div class="parent-container">
-        <h1><img src="/src/assets/log-in.png" alt="login"/>Sign In</h1>
+        <h1><img src={login} alt="login"/>Sign In</h1>
         <form class="form">
           <div class="block">
             <label htmlFor="email">E-mail</label>
@@ -25,7 +27,7 @@ function App() {
           </span>
         </div>
         <button id="sign-in">Sign in</button>
-        <button id="google"><img src="/src/assets/icons8-google.svg" alt="google" />Sign in with google</button>
+        <button id="google"><img src={google} alt="google" />Sign in with google</button>
         <p class="sign-up">Don't have an account? <a>Sign up</a></p>
       </div>
     </>
