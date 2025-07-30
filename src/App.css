@@ -4,11 +4,23 @@
   padding: 0;
 }
 body {
+  background-image: url('/src/assets/6.jpg');
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+h1 img {
+  height: 50px;
 }
 
 form {
@@ -18,10 +30,11 @@ form {
 }
 
 form input {
-  border: none;
+  border: 2px solid #f1f1f1;
   height: 40px;
   border-radius: 10px;
   padding: 0 10px;
+  font-size: 16px;
 }
 
 form label {
@@ -30,8 +43,39 @@ form label {
 }
 
 button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   border: none;
   font-weight: 500;
+  height: 40px;
+  background-color: white;
+  margin: 8px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+  transition: all 0.3s ease;
+}
+
+#sign-in {
+  background-color: #8751df;
+  color: white;
+}
+#google {
+  background-color: #f1f1f1;
+  border: 2px solid #f1f1f1;
+}
+#google:hover {
+  background-color: white;
+}
+
+button img {
+  height: 20px;
 }
 
 h1 {
@@ -43,11 +87,13 @@ h1 {
 .parent-container {
   display: flex;
   flex-direction: column;
-  background-color: #F1F1F1;
   padding: 30px;
   border-radius: 20px;
   width: min(90vw, 400px);
-  height: max(50vh, 400px);
+  min-height: 400px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+
+  background-color: white;
 }
 
 .block {
@@ -71,10 +117,19 @@ h1 {
   color: grey
 }
 
-.extra a:hover {
-  color: blueviolet;
+a:hover {
+  color: #8751df;
   cursor: pointer;
   transition: all 0.3s ease;
+}
+
+.sign-up {
+  margin: 10px 5px;
+  color: grey;
+}
+
+p a {
+  color: black;
 }
 
 /* custom checkbox */
@@ -94,8 +149,8 @@ input[type="checkbox"] {
 }
 
 input[type="checkbox"]:checked {
-  background-color: black;
-  border-color: black;
+  background-color: #8751df ;
+  border-color: #8751df;
 }
 
 input[type="checkbox"]:checked::after {
@@ -109,4 +164,3 @@ input[type="checkbox"]:checked::after {
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
 }
-

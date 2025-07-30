@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <div class="parent-container">
-        <h1>Sign In</h1>
+        <h1><img src="/src/assets/log-in.png" alt="login"/>Sign In</h1>
         <form class="form">
           <div class="block">
             <label htmlFor="email">E-mail</label>
@@ -24,9 +24,9 @@ function App() {
             <a>Forgot password?</a>
           </span>
         </div>
-        <button>Sign in</button>
-        <button>Sign in with google</button>
-        <p>Don't have an account? <a>Sign up</a></p>
+        <button id="sign-in">Sign in</button>
+        <button id="google"><img src="/src/assets/icons8-google.svg" alt="google" />Sign in with google</button>
+        <p class="sign-up">Don't have an account? <a>Sign up</a></p>
       </div>
     </>
   )
