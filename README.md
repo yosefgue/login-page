@@ -1,5 +1,4 @@
 # Static login page
-Technologies used: React (JSX, CSS)
 Preview: https://yosefgue.github.io/login-page/
 
 
